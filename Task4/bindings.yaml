@@ -1,0 +1,71 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: sales
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: cluster-admin-user
+subjects:
+  - kind: ServiceAccount
+    name: cluster-admin-user
+    namespace: default
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: devops-user
+  namespace: sales
+subjects:
+  - kind: ServiceAccount
+    name: devops-user
+    namespace: default
+roleRef:
+  kind: Role
+  name: devops
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: developer-user
+  namespace: sales
+subjects:
+  - kind: ServiceAccount
+    name: developer-user
+    namespace: default
+roleRef:
+  kind: Role
+  name: developer
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: viewer-user
+subjects:
+  - kind: ServiceAccount
+    name: viewer-user
+    namespace: default
+roleRef:
+  kind: ClusterRole
+  name: viewer
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: security-user
+subjects:
+  - kind: ServiceAccount
+    name: security-user
+    namespace: default
+roleRef:
+  kind: ClusterRole
+  name: security
+  apiGroup: rbac.authorization.k8s.io
