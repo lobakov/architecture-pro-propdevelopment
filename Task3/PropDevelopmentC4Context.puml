@@ -1,0 +1,34 @@
+@startuml
+!include <C4/C4_Context>
+
+title Диаграмма контекста "Умный дом" компании PropDevelopment
+
+Person(Customer, "Клиент", "Клиент компании")
+Person(Owner, "Собственник", "Собственник недвижимости")
+
+System_Boundary(PropDevelopment, "PropDevelopment") {
+    System(ClientService, "Сервисы для клиентов", "Позволяет клиенту выбрать и забронировать недвижимость")
+    System(OwnerService, "Сервисы ЖКУ", "Позволяет собственнику получить услуги ЖКХ в т.ч. услуги Умного дома")
+    System(SmartHome, "Умный дом", "Позволяет собственнику получить услуги Умного дома")
+}
+
+System_Boundary(OwnerProperty, "Недвижимость собственника") {
+    System_Ext(Home, "Умные устройства", "Устройства, управление которыми осуществляется при помощи Умного дома")
+}
+
+System_Ext(Government, "Государственные регистрационные органы", "Производят регистрацию недвижимости")
+System_Ext(UtilitiesProvider, "Поставщики ресурсов ЖКХ", "Предоставляют услуги ЖКХ собственникам недвижимости")
+System_Ext(SmartHomeProvider, "Поставщик услуг Умного дома", "Управление сервисами Умного дома для собственников")
+System_Ext(PaymentService, "Платежный сервис", "Оплата услуг")
+
+Rel(Customer, ClientService, "Выбирает и бронирует недвижимость")
+Rel(Owner, OwnerService, "Пользуется услугами ЖКХ для собственников, включая управление услугами Умного дома")
+Rel(Owner, Home, "Использует устройство")
+Rel(Home, SmartHomeProvider, "Запрос разрешения на операцию, с передачей вектора биометрии или хэша гос номера")
+Rel(SmartHomeProvider, SmartHome, "Запрос аутентификации с передачей вектора биометрии или хэша гос номера")
+Rel_R(OwnerService, SmartHome, "Подключение пользователя")
+
+Rel(ClientService, Government, "Регистрирует сделки с недвижимостью")
+Rel(OwnerService, UtilitiesProvider, "Сервисы ЖКХ для собственников недвижимости")
+Rel(OwnerService, PaymentService, "Оплата услуг")
+@enduml

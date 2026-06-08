@@ -1,0 +1,651 @@
+====== get/list/watch secrets
+2026-06-04T17:30:24.423206Z user=system:apiserver verb=watch secret=null/null sourceIP=127.0.0.1
+2026-06-04T17:30:24.423206Z user=system:apiserver verb=watch secret=null/null sourceIP=127.0.0.1
+2026-06-04T17:30:45.328191Z user=system:kube-controller-manager verb=watch secret=null/null sourceIP=192.168.49.2
+2026-06-04T17:30:45.328191Z user=system:kube-controller-manager verb=watch secret=null/null sourceIP=192.168.49.2
+2026-06-04T17:34:29.631477Z user=minikube-user verb=list secret=kube-system/null sourceIP=192.168.49.1
+2026-06-04T17:34:29.631477Z user=minikube-user verb=list secret=kube-system/null sourceIP=192.168.49.1
+2026-06-04T17:34:29.827175Z user=minikube-user verb=list secret=kube-system/null sourceIP=192.168.49.1
+2026-06-04T17:34:29.827175Z user=minikube-user verb=list secret=kube-system/null sourceIP=192.168.49.1
+2026-06-04T17:34:44.274338Z user=minikube-user verb=list secret=kube-system/null sourceIP=192.168.49.1
+2026-06-04T17:34:44.274338Z user=minikube-user verb=list secret=kube-system/null sourceIP=192.168.49.1
+2026-06-04T17:34:44.436481Z user=minikube-user verb=list secret=kube-system/null sourceIP=192.168.49.1
+2026-06-04T17:34:44.436481Z user=minikube-user verb=list secret=kube-system/null sourceIP=192.168.49.1
+2026-06-04T17:30:24.423206Z user=system:apiserver verb=watch secret=null/null sourceIP=127.0.0.1
+2026-06-04T17:36:01.425537Z user=system:apiserver verb=watch secret=null/null sourceIP=127.0.0.1
+2026-06-04T17:36:01.425537Z user=system:apiserver verb=watch secret=null/null sourceIP=127.0.0.1
+
+
+====== create/update/delete rolebindings, clusterrolebindings, clusterroles
+2026-06-04T17:34:32.112077Z user=minikube-user verb=create resource=rolebindings name=secure-ops/null
+2026-06-04T17:34:32.112077Z user=minikube-user verb=create resource=rolebindings name=secure-ops/escalate-binding
+
+
+====== delete/patch/update kube-system, nodes, clusterroles, clusterrolebindings
+2026-06-04T17:30:24.367381Z user=system:apiserver verb=delete resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:30:24.367381Z user=system:apiserver verb=delete resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:30:24.554218Z user=system:node:minikube verb=patch resource=nodes namespace=null name=minikube
+2026-06-04T17:30:24.554218Z user=system:node:minikube verb=patch resource=nodes namespace=null name=minikube
+2026-06-04T17:30:26.003703Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=etcd-minikube
+2026-06-04T17:30:26.003703Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=etcd-minikube
+2026-06-04T17:30:26.019525Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=kube-apiserver-minikube
+2026-06-04T17:30:26.019525Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=kube-apiserver-minikube
+2026-06-04T17:30:26.030618Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=kube-controller-manager-minikube
+2026-06-04T17:30:26.030618Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=kube-controller-manager-minikube
+2026-06-04T17:30:26.044199Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=kube-scheduler-minikube
+2026-06-04T17:30:26.044199Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=kube-scheduler-minikube
+2026-06-04T17:30:26.055710Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:30:26.055710Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:30:26.255835Z user=system:node:minikube verb=delete resource=pods namespace=kube-system name=kube-apiserver-minikube
+2026-06-04T17:30:26.255835Z user=system:node:minikube verb=delete resource=pods namespace=kube-system name=kube-apiserver-minikube
+2026-06-04T17:30:27.271247Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=kube-apiserver-minikube
+2026-06-04T17:30:27.271247Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=kube-apiserver-minikube
+2026-06-04T17:30:27.285034Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:30:27.285034Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:30:27.302975Z user=system:serviceaccount:kube-system:node-controller verb=update resource=nodes namespace=null name=minikube
+2026-06-04T17:30:27.302975Z user=system:serviceaccount:kube-system:node-controller verb=update resource=nodes namespace=null name=minikube
+2026-06-04T17:30:34.832650Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:30:34.832650Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:30:37.032444Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103cbd5d8f2
+2026-06-04T17:30:37.033530Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:30:37.032444Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103cbd5d8f2
+2026-06-04T17:30:37.033530Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:30:37.123967Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103d2b8bb4f
+2026-06-04T17:30:37.123967Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103d2b8bb4f
+2026-06-04T17:30:37.327166Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103ddb85d30
+2026-06-04T17:30:37.327166Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103ddb85d30
+2026-06-04T17:30:37.342016Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f104056e634f
+2026-06-04T17:30:37.344694Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:30:37.342016Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f104056e634f
+2026-06-04T17:30:37.344694Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:30:42.573577Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=calico-kube-controllers-565c89d6df-msb8c.18b5f1053fbf4f61
+2026-06-04T17:30:42.573577Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=calico-kube-controllers-565c89d6df-msb8c.18b5f1053fbf4f61
+2026-06-04T17:30:45.134193Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:30:45.134193Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:30:55.441694Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:30:55.441694Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:04.033501Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103cbd5d8f2
+2026-06-04T17:31:04.034629Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:31:04.033501Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103cbd5d8f2
+2026-06-04T17:31:04.034629Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:31:04.116767Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103d2b8bb4f
+2026-06-04T17:31:04.116767Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103d2b8bb4f
+2026-06-04T17:31:04.257747Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103ddb85d30
+2026-06-04T17:31:04.257747Z user=system:node:minikube verb=patch resource=events namespace=kube-system name=storage-provisioner.18b5f103ddb85d30
+2026-06-04T17:31:04.513014Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:31:04.513014Z user=system:node:minikube verb=patch resource=pods namespace=kube-system name=storage-provisioner
+2026-06-04T17:31:05.748832Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:05.748832Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:15.869096Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:15.869096Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:21.659327Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:21.659327Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:21.679522Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:21.679522Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:23.687475Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:23.687475Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:25.700451Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:25.700451Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:26.091993Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:26.091993Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:27.709558Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:27.709558Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:29.718764Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:29.718764Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:31.739723Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:31.739723Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:33.748661Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:33.748661Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:35.757841Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:35.757841Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:36.124229Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:36.124229Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:37.766962Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:37.766962Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:39.788224Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:39.788224Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:41.800912Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:41.800912Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:43.822223Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:43.822223Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:45.835004Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:45.835004Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:46.224540Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:46.224540Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:47.844085Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:47.844085Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:49.864853Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:49.864853Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:51.880921Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:51.880921Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:53.896650Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:53.896650Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:55.917753Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:55.917753Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:56.436839Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:56.436839Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:31:57.926246Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:57.926246Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:59.935115Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:31:59.935115Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:01.944484Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:01.944484Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:03.953149Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:03.953149Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:05.974052Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:05.974052Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:06.848599Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:06.848599Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:07.985593Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:07.985593Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:10.007062Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:10.007062Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:12.016086Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:12.016086Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:14.047004Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:14.047004Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:16.068756Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:16.068756Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:17.041197Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:17.041197Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:18.089534Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:18.089534Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:20.100147Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:20.100147Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:22.116352Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:22.116352Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:24.127644Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:24.127644Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:26.150326Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:26.150326Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:27.261704Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:27.261704Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:28.159067Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:28.159067Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:30.181313Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:30.181313Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:32.193690Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:32.193690Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:34.213974Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:34.213974Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:36.222844Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:36.222844Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:37.514842Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:37.514842Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:38.243680Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:38.243680Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:40.252632Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:40.252632Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:42.273982Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:42.273982Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:44.295694Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:44.295694Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:46.319746Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:46.319746Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:47.757031Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:47.757031Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:48.341788Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:48.341788Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:50.363986Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:50.363986Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:52.385196Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:52.385196Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:54.425546Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:54.425546Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:56.448529Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:56.448529Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:57.976067Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:57.976067Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:32:58.471978Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:32:58.471978Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:00.481806Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:00.481806Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:02.499765Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:02.499765Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:04.523215Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:04.523215Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:06.544230Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:06.544230Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:08.034634Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:08.034634Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:08.566608Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:08.566608Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:10.580567Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:10.580567Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:12.601677Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:12.601677Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:14.612093Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:14.612093Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:16.639648Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:16.639648Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:18.374236Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:18.374236Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:18.649504Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:18.649504Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:20.670158Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:20.670158Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:22.679840Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:22.679840Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:24.690432Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:24.690432Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:26.700632Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:26.700632Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:28.401085Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:28.401085Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:28.710804Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:28.710804Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:30.733755Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:30.733755Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:32.743714Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:32.743714Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:34.752762Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:34.752762Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:36.773781Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:36.773781Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:38.753345Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:38.753345Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:38.805997Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:38.805997Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:40.822206Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:40.822206Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:42.834520Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:42.834520Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:44.855490Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:44.855490Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:46.864542Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:46.864542Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:48.887227Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:48.887227Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:49.081380Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:49.081380Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:50.908570Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:50.908570Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:52.922021Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:52.922021Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:54.932375Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:54.932375Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:56.941648Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:56.941648Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:58.951730Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:58.951730Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:33:59.394334Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:33:59.394334Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:00.961705Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:00.961705Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:02.975638Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:02.975638Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:04.997605Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:04.997605Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:07.007136Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:07.007136Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:09.017378Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:09.017378Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:09.638445Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:09.638445Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:11.030393Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:11.030393Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:13.038462Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:13.038462Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:15.059008Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:15.059008Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:17.090167Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:17.090167Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:19.116897Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:19.116897Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:19.758735Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:19.758735Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:21.136771Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:21.136771Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:23.147070Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:23.147070Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:25.159188Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:25.159188Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:27.179441Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:27.179441Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:29.187375Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:29.187375Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:30.039801Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:30.039801Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:31.195021Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:31.195021Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:33.206039Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:33.206039Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:35.214090Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:35.214090Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:37.225782Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:37.225782Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:39.242045Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:39.242045Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:40.123066Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:40.123066Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:41.253136Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:41.253136Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:43.263690Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:43.263690Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:45.276345Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:45.276345Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:47.285412Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:47.285412Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:49.305026Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:49.305026Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:50.269344Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:50.269344Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:34:51.314224Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:51.314224Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:53.323093Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:53.323093Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:55.331588Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:55.331588Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:57.340484Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:57.340484Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:59.348514Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:34:59.348514Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:00.540095Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:00.540095Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:01.370000Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:01.370000Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:03.379211Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:03.379211Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:05.389091Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:05.389091Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:07.398438Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:07.398438Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:09.421116Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:09.421116Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:10.599000Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:10.599000Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:11.430996Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:11.430996Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:13.441612Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:13.441612Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:15.449860Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:15.449860Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:17.471631Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:17.471631Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:19.491969Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:19.491969Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:20.827996Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:20.827996Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:21.513154Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:21.513154Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:23.522091Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:23.522091Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:25.531353Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:25.531353Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:27.540611Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:27.540611Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:29.549962Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:29.549962Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:30.970928Z user=system:node:minikube verb=patch resource=nodes namespace=null name=minikube
+2026-06-04T17:35:30.970928Z user=system:node:minikube verb=patch resource=nodes namespace=null name=minikube
+2026-06-04T17:35:31.029566Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:31.029566Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:31.567140Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:31.567140Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:33.579210Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:33.579210Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:35.596100Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:35.596100Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:37.605632Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:37.605632Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:39.635744Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:39.635744Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:41.081968Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:41.081968Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:41.650522Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:41.650522Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:43.661238Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:43.661238Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:45.671429Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:45.671429Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:47.684339Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:47.684339Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:49.706492Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:49.706492Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:51.326922Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:51.326922Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:35:51.733228Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:51.733228Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:53.744702Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:53.744702Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:55.754394Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:55.754394Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:57.766577Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:57.766577Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:59.780029Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:35:59.780029Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:01.689864Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:01.689864Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:01.789949Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:01.789949Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:03.799536Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:03.799536Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:05.829021Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:05.829021Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:07.838944Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:07.838944Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:09.859280Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:09.859280Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:11.869825Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:11.869825Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:11.947891Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:11.947891Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:13.879747Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:13.879747Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:15.888198Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:15.888198Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:17.902330Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:17.902330Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:19.919923Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:19.919923Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:21.928421Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:21.928421Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:21.957101Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:21.957101Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:23.942133Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:23.942133Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:25.961390Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:25.961390Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:27.970009Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:27.970009Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:29.990662Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:29.990662Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:32.002638Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:32.002638Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:32.322508Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:32.322508Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:34.027679Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:34.027679Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:36.048959Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:36.048959Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:38.061288Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:38.061288Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:40.069944Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:40.069944Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:42.081309Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:42.081309Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:42.459928Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:42.459928Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:44.090825Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:44.090825Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:46.109902Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:46.109902Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:48.118630Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:48.118630Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:50.130142Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:50.130142Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:52.139779Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:52.139779Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:52.549669Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:52.549669Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:36:54.149386Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:54.149386Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:56.176367Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:56.176367Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:58.188650Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:36:58.188650Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:00.221543Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:00.221543Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:02.242675Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:02.242675Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:02.627773Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:02.627773Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:04.251022Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:04.251022Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:06.260624Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:06.260624Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:08.269481Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:08.269481Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:10.278391Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:10.278391Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:12.288036Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:12.288036Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:12.932515Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:12.932515Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:14.300076Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:14.300076Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:16.324024Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:16.324024Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:18.333550Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:18.333550Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:20.342977Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:20.342977Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:22.368198Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:22.368198Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:22.958848Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:22.958848Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:24.387931Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:24.387931Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:26.409959Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:26.409959Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:28.420385Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:28.420385Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:30.447597Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:30.447597Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:32.456484Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:32.456484Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:32.989653Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:32.989653Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:34.466278Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:34.466278Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:36.477551Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:36.477551Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:38.503395Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:38.503395Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:40.524201Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:40.524201Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:42.544938Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:42.544938Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:43.176021Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:43.176021Z user=system:apiserver verb=update resource=leases namespace=kube-system name=apiserver-eqt674mfxb4j56mrjjkoe7b7ii
+2026-06-04T17:37:44.566552Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+2026-06-04T17:37:44.566552Z user=system:serviceaccount:kube-system:storage-provisioner verb=update resource=endpoints namespace=kube-system name=k8s.io-minikube-hostpath
+
+
+====== exec/create/delete/update
+2026-06-04T17:30:25.902077Z user=system:node:minikube verb=create pod=kube-system/null sourceIP=192.168.49.2
+2026-06-04T17:30:25.902077Z user=system:node:minikube verb=create pod=kube-system/etcd-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:25.918798Z user=system:node:minikube verb=create pod=kube-system/null sourceIP=192.168.49.2
+2026-06-04T17:30:25.918798Z user=system:node:minikube verb=create pod=kube-system/kube-apiserver-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:25.927343Z user=system:node:minikube verb=create pod=kube-system/null sourceIP=192.168.49.2
+2026-06-04T17:30:25.927343Z user=system:node:minikube verb=create pod=kube-system/kube-controller-manager-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:25.935831Z user=system:node:minikube verb=create pod=kube-system/null sourceIP=192.168.49.2
+2026-06-04T17:30:25.935831Z user=system:node:minikube verb=create pod=kube-system/kube-scheduler-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.003703Z user=system:node:minikube verb=patch pod=kube-system/etcd-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.003703Z user=system:node:minikube verb=patch pod=kube-system/etcd-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.019525Z user=system:node:minikube verb=patch pod=kube-system/kube-apiserver-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.019525Z user=system:node:minikube verb=patch pod=kube-system/kube-apiserver-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.030618Z user=system:node:minikube verb=patch pod=kube-system/kube-controller-manager-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.030618Z user=system:node:minikube verb=patch pod=kube-system/kube-controller-manager-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.044199Z user=system:node:minikube verb=patch pod=kube-system/kube-scheduler-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.044199Z user=system:node:minikube verb=patch pod=kube-system/kube-scheduler-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.055710Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:30:26.055710Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:30:26.255835Z user=system:node:minikube verb=delete pod=kube-system/kube-apiserver-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.255835Z user=system:node:minikube verb=delete pod=kube-system/kube-apiserver-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:26.275296Z user=system:node:minikube verb=create pod=kube-system/null sourceIP=192.168.49.2
+2026-06-04T17:30:26.275296Z user=system:node:minikube verb=create pod=kube-system/kube-apiserver-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:27.271247Z user=system:node:minikube verb=patch pod=kube-system/kube-apiserver-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:27.271247Z user=system:node:minikube verb=patch pod=kube-system/kube-apiserver-minikube sourceIP=192.168.49.2
+2026-06-04T17:30:27.285034Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:30:27.285034Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:30:37.033530Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:30:37.033530Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:30:37.344694Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:30:37.344694Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:31:04.034629Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:31:04.034629Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:31:04.513014Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:31:04.513014Z user=system:node:minikube verb=patch pod=kube-system/storage-provisioner sourceIP=192.168.49.2
+2026-06-04T17:34:29.118958Z user=minikube-user verb=create pod=secure-ops/null sourceIP=192.168.49.1
+2026-06-04T17:34:29.118958Z user=minikube-user verb=create pod=secure-ops/attacker-pod sourceIP=192.168.49.1
+2026-06-04T17:34:29.138368Z user=system:kube-scheduler verb=create pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:29.138368Z user=system:kube-scheduler verb=create pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:29.162087Z user=system:node:minikube verb=patch pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:29.162087Z user=system:node:minikube verb=patch pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:30.038384Z user=system:serviceaccount:kube-system:calico-cni-plugin verb=patch pod=secure-ops/attacker-pod sourceIP=10.244.120.64
+2026-06-04T17:34:30.038384Z user=system:serviceaccount:kube-system:calico-cni-plugin verb=patch pod=secure-ops/attacker-pod sourceIP=10.244.120.64
+2026-06-04T17:34:30.948846Z user=minikube-user verb=create pod=secure-ops/null sourceIP=192.168.49.1
+2026-06-04T17:34:30.948846Z user=minikube-user verb=create pod=secure-ops/privileged-pod sourceIP=192.168.49.1
+2026-06-04T17:34:30.955189Z user=system:kube-scheduler verb=create pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:34:30.955189Z user=system:kube-scheduler verb=create pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:34:30.974188Z user=system:node:minikube verb=patch pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:34:30.974188Z user=system:node:minikube verb=patch pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:34:31.380641Z user=minikube-user verb=create pod=kube-system/coredns-7d764666f9-9rn4d sourceIP=192.168.49.1
+2026-06-04T17:34:31.380641Z user=minikube-user verb=create pod=kube-system/coredns-7d764666f9-9rn4d sourceIP=192.168.49.1
+2026-06-04T17:34:31.380641Z user=minikube-user verb=create pod=kube-system/coredns-7d764666f9-9rn4d sourceIP=192.168.49.1
+2026-06-04T17:34:31.771992Z user=system:serviceaccount:kube-system:calico-cni-plugin verb=patch pod=secure-ops/privileged-pod sourceIP=10.244.120.64
+2026-06-04T17:34:31.771992Z user=system:serviceaccount:kube-system:calico-cni-plugin verb=patch pod=secure-ops/privileged-pod sourceIP=10.244.120.64
+2026-06-04T17:34:41.751586Z user=system:node:minikube verb=patch pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:41.751586Z user=system:node:minikube verb=patch pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:43.834924Z user=minikube-user verb=create pod=secure-ops/null sourceIP=192.168.49.1
+2026-06-04T17:34:43.834924Z user=minikube-user verb=create pod=secure-ops/attacker-pod sourceIP=192.168.49.1
+2026-06-04T17:34:45.121575Z user=minikube-user verb=create pod=kube-system/coredns-7d764666f9-9rn4d sourceIP=192.168.49.1
+2026-06-04T17:34:45.121575Z user=minikube-user verb=create pod=kube-system/coredns-7d764666f9-9rn4d sourceIP=192.168.49.1
+2026-06-04T17:34:45.121575Z user=minikube-user verb=create pod=kube-system/coredns-7d764666f9-9rn4d sourceIP=192.168.49.1
+2026-06-04T17:34:51.808748Z user=system:node:minikube verb=patch pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:34:51.808748Z user=system:node:minikube verb=patch pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:34:51.853856Z user=system:serviceaccount:kube-system:calico-cni-plugin verb=patch pod=secure-ops/privileged-pod sourceIP=10.244.120.64
+2026-06-04T17:34:51.853856Z user=system:serviceaccount:kube-system:calico-cni-plugin verb=patch pod=secure-ops/privileged-pod sourceIP=10.244.120.64
+2026-06-04T17:34:52.348051Z user=system:serviceaccount:kube-system:calico-cni-plugin verb=patch pod=secure-ops/privileged-pod sourceIP=10.244.120.64
+2026-06-04T17:34:52.348051Z user=system:serviceaccount:kube-system:calico-cni-plugin verb=patch pod=secure-ops/privileged-pod sourceIP=10.244.120.64
+2026-06-04T17:34:52.818639Z user=system:node:minikube verb=patch pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:34:52.818639Z user=system:node:minikube verb=patch pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:34:53.034777Z user=system:node:minikube verb=patch pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:53.034777Z user=system:node:minikube verb=patch pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:57.970752Z user=system:node:minikube verb=patch pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:34:57.970752Z user=system:node:minikube verb=patch pod=secure-ops/attacker-pod sourceIP=192.168.49.2
+2026-06-04T17:35:06.025903Z user=system:node:minikube verb=patch pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+2026-06-04T17:35:06.025903Z user=system:node:minikube verb=patch pod=secure-ops/privileged-pod sourceIP=192.168.49.2
+
+
+====== privileged pods
+2026-06-04T17:30:25.902077Z user=system:node:minikube CREATE pod=kube-system/null
+2026-06-04T17:30:25.902077Z user=system:node:minikube CREATE pod=kube-system/etcd-minikube
+2026-06-04T17:30:25.918798Z user=system:node:minikube CREATE pod=kube-system/null
+2026-06-04T17:30:25.918798Z user=system:node:minikube CREATE pod=kube-system/kube-apiserver-minikube
+2026-06-04T17:30:25.927343Z user=system:node:minikube CREATE pod=kube-system/null
+2026-06-04T17:30:25.927343Z user=system:node:minikube CREATE pod=kube-system/kube-controller-manager-minikube
+2026-06-04T17:30:25.935831Z user=system:node:minikube CREATE pod=kube-system/null
+2026-06-04T17:30:25.935831Z user=system:node:minikube CREATE pod=kube-system/kube-scheduler-minikube
+2026-06-04T17:30:26.275296Z user=system:node:minikube CREATE pod=kube-system/null
+2026-06-04T17:30:26.275296Z user=system:node:minikube CREATE pod=kube-system/kube-apiserver-minikube
+2026-06-04T17:34:29.118958Z user=minikube-user CREATE pod=secure-ops/null
+2026-06-04T17:34:29.118958Z user=minikube-user CREATE pod=secure-ops/attacker-pod
+2026-06-04T17:34:29.138368Z user=system:kube-scheduler CREATE pod=secure-ops/attacker-pod
+2026-06-04T17:34:29.138368Z user=system:kube-scheduler CREATE pod=secure-ops/attacker-pod
+2026-06-04T17:34:30.948846Z user=minikube-user CREATE pod=secure-ops/null
+2026-06-04T17:34:30.948846Z user=minikube-user CREATE pod=secure-ops/privileged-pod
+2026-06-04T17:34:30.955189Z user=system:kube-scheduler CREATE pod=secure-ops/privileged-pod
+2026-06-04T17:34:30.955189Z user=system:kube-scheduler CREATE pod=secure-ops/privileged-pod
+2026-06-04T17:34:31.380641Z user=minikube-user CREATE pod=kube-system/coredns-7d764666f9-9rn4d
+2026-06-04T17:34:31.380641Z user=minikube-user CREATE pod=kube-system/coredns-7d764666f9-9rn4d
+2026-06-04T17:34:31.380641Z user=minikube-user CREATE pod=kube-system/coredns-7d764666f9-9rn4d
+2026-06-04T17:34:43.834924Z user=minikube-user CREATE pod=secure-ops/null
+2026-06-04T17:34:43.834924Z user=minikube-user CREATE pod=secure-ops/attacker-pod
+2026-06-04T17:34:45.121575Z user=minikube-user CREATE pod=kube-system/coredns-7d764666f9-9rn4d
+2026-06-04T17:34:45.121575Z user=minikube-user CREATE pod=kube-system/coredns-7d764666f9-9rn4d
+2026-06-04T17:34:45.121575Z user=minikube-user CREATE pod=kube-system/coredns-7d764666f9-9rn4d
+
+
+Готово
